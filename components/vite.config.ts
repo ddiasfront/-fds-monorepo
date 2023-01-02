@@ -10,8 +10,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, "src/main.tsx"),
-      name: "fds",
-      fileName: "fds",
+      name: "freedom-ds-components",
+      fileName: "freedom-ds-components",
     },
     rollupOptions: {
       plugins: [visualizer()],

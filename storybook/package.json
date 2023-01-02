@@ -11,7 +11,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@fds/components": "workspace:^0.0.0",
+    "@freedom-ds/components": "workspace:^0.0.0",
     "@mdx-js/react": "^2.2.1",
     "@storybook/cli": "^6.5.15",
     "react": "^18.2.0",
