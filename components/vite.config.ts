@@ -1,5 +1,6 @@
 import { resolve, dirname } from "path";
 import { defineConfig } from "vite";
+import { visualizer } from "rollup-plugin-visualizer";
 import react from "@vitejs/plugin-react-swc";
 
 const __dirname = dirname("./");
@@ -13,6 +14,7 @@ export default defineConfig({
       fileName: "fds",
     },
     rollupOptions: {
+      plugins: [visualizer()],
       external: ["react"],
       output: {
         globals: {
