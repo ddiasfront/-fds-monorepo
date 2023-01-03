@@ -6,6 +6,7 @@
   "workspaces": [
     "components/**",
     "storybook/**",
+    "web/**",
     "styles/**"
   ],
   "scripts": {

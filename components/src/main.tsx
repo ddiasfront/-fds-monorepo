@@ -1,3 +1,7 @@
-import { App } from "./App";
+import { globalStyles } from "@freedom-ds/web";
 
-export { App };
+globalStyles();
+
+import { Button } from "./components/Button";
+
+export { Button };
