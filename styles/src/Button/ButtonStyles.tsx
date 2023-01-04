@@ -1,6 +1,7 @@
 import { css } from "@stitches/core";
 
 export const ButtonCSS = css({
+  cursor: "pointer",
   px: "$3",
   border: "1.25px solid $blue500",
   borderRadius: "$rl",
@@ -18,6 +19,10 @@ export const ButtonCSS = css({
       outlined: {
         backgroundColor: "transparent",
         color: "$blue500",
+
+        "&:hover": {
+          backgroundColor: "$gray100",
+        },
       },
     },
   },
