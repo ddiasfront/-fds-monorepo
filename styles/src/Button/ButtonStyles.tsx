@@ -26,7 +26,7 @@ export const ButtonCSS = css({
         color: "$white100",
 
         "&:hover": {
-          backgroundColor: "$green100",
+          backgroundColor: "$green800",
         },
       },
     },
@@ -46,6 +46,11 @@ export const ButtonCSS = css({
       css: {
         color: "$green500",
         borderColor: "$green500",
+
+        "&:hover": {
+          color: "$white100",
+          backgroundColor: "$green800",
+        },
       },
     },
   ],

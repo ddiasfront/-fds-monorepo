@@ -5,6 +5,7 @@ const StyledButton = styled("button", ButtonCSS);
 const StyledButtonOutlined = styled("button", ButtonCSS);
 
 enum ButtonVariants {
+  green = "green",
   outlined = "outlined",
 }
 
