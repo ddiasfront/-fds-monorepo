@@ -2,6 +2,7 @@ import { resolve, dirname } from "path";
 import { defineConfig } from "vite";
 import { visualizer } from "rollup-plugin-visualizer";
 import react from "@vitejs/plugin-react-swc";
+import dts from "vite-plugin-dts";
 
 const __dirname = dirname("./");
 
@@ -23,5 +24,10 @@ export default defineConfig({
       },
     },
   },
-  plugins: [react()],
+  plugins: [
+    react(),
+    dts({
+      insertTypesEntry: true,
+    }),
+  ],
 });

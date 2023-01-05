@@ -8,6 +8,7 @@
   ],
   "main": "./dist/freedom-ds-components.umd.cjs",
   "module": "./dist/freedom-ds-components.js",
+  "typings": "./dist/main.d.ts",
   "exports": {
     ".": {
       "import": "./dist/freedom-ds-components.js",
@@ -25,7 +26,8 @@
     "@stitches/react": "^1.2.8",
     "path": "^0.12.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-dts": "^1.7.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",

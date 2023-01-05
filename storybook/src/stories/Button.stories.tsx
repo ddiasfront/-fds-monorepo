@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Button } from "@freedom-ds/components";
+import { Button, ButtonVariants } from "@freedom-ds/components";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -24,13 +24,21 @@ Default.args = {
 
 export const Green = Template.bind({});
 Green.args = {
-  variant: "green",
+  variant: ButtonVariants.green,
   label: "Hello World 🌏",
 };
 
 export const OutlinedGreen = Template.bind({});
 OutlinedGreen.args = {
-  variant: "green",
+  variant: ButtonVariants.green,
+  outlined: true,
+  label: "Hello World 🌏",
+};
+
+export const OutlinedGreenSize2 = Template.bind({});
+OutlinedGreenSize2.args = {
+  variant: ButtonVariants.green,
+  size: 2,
   outlined: true,
   label: "Hello World 🌏",
 };

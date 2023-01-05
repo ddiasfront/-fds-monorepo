@@ -2,6 +2,6 @@ import { globalStyles } from "@freedom-ds/web";
 
 globalStyles();
 
-import { Button } from "./components/Button";
+import { Button, ButtonVariants } from "./components/Button";
 
-export { Button };
+export { Button, ButtonVariants };

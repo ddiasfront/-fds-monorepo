@@ -1,24 +1,24 @@
 import { ButtonCSS } from "@freedom-ds/styles";
-import { styled } from "@freedom-ds/web";
+import { styled, css } from "@freedom-ds/web";
+import React, { forwardRef } from "react";
 
-const StyledButton = styled("button", ButtonCSS);
-const StyledButtonOutlined = styled("button", ButtonCSS);
-
-enum ButtonVariants {
+export enum ButtonVariants {
+  default = "default",
   green = "green",
-  outlined = "outlined",
 }
 
 export type ButtonStyleProps = {
   variant: ButtonVariants;
   label: string;
   outlined: boolean;
+  size: 1 | 2;
 };
 
-export function Button({ variant, label, outlined }: ButtonStyleProps) {
-  return (
-    <StyledButton variant={variant} outlined={outlined}>
-      {label}
-    </StyledButton>
-  );
-}
+const StyledButton = styled("button", ButtonCSS);
+
+export const Button = forwardRef<
+  React.ElementRef<typeof StyledButton>,
+  ButtonStyleProps
+>(({ ...props }) => {
+  return <StyledButton {...props}>{props.label}</StyledButton>;
+});

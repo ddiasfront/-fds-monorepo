@@ -35,9 +35,21 @@ export const ButtonCSS = css({
         backgroundColor: "transparent",
       },
     },
+
+    size: {
+      1: {
+        height: 25,
+        fontSize: "$md",
+      },
+      2: {
+        height: 55,
+        fontSize: "$lg",
+      },
+    },
   },
   defaultVariants: {
     variant: "default",
+    size: 1,
   },
   compoundVariants: [
     {

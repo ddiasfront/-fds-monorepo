@@ -77,7 +77,7 @@ export const {
   },
 
   utils: {
-    px: (value: unknown) => ({
+    px: (value: any) => ({
       paddingLeft: value,
       paddingRight: value,
     }),
