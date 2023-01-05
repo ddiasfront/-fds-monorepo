@@ -6,24 +6,47 @@ export const ButtonCSS = css({
   border: "1.25px solid $blue500",
   borderRadius: "$rl",
   fontSize: "$sm",
-  fontWeight: "$thin",
+  fontWeight: "$medium",
   fontFamily: "Work Sans",
-  backgroundColor: "$blue600",
-  color: "$white100",
   transition: "all 0.5s ease",
-  "&:hover": {
-    backgroundColor: "$blue500",
-  },
+
   variants: {
     variant: {
-      outlined: {
-        backgroundColor: "transparent",
-        color: "$blue500",
+      default: {
+        backgroundColor: "$blue600",
+        color: "$white100",
 
         "&:hover": {
-          backgroundColor: "$gray100",
+          backgroundColor: "$blue500",
+        },
+      },
+      green: {
+        backgroundColor: "$green500",
+        borderColor: "$green800",
+        color: "$white100",
+
+        "&:hover": {
+          backgroundColor: "$green100",
         },
       },
     },
+    outlined: {
+      true: {
+        backgroundColor: "transparent",
+      },
+    },
   },
+  defaultVariants: {
+    variant: "default",
+  },
+  compoundVariants: [
+    {
+      variant: "green",
+      outlined: true,
+      css: {
+        color: "$green500",
+        borderColor: "$green500",
+      },
+    },
+  ],
 });

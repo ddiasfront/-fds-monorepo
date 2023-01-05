@@ -22,8 +22,15 @@ Default.args = {
   label: "Hello World 🌏",
 };
 
-export const Outlined = Template.bind({});
-Outlined.args = {
-  variant: "outlined",
+export const Green = Template.bind({});
+Green.args = {
+  variant: "green",
+  label: "Hello World 🌏",
+};
+
+export const OutlinedGreen = Template.bind({});
+OutlinedGreen.args = {
+  variant: "green",
+  outlined: true,
   label: "Hello World 🌏",
 };

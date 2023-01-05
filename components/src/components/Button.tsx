@@ -11,8 +11,13 @@ enum ButtonVariants {
 export type ButtonStyleProps = {
   variant: ButtonVariants;
   label: string;
+  outlined: boolean;
 };
 
-export function Button({ variant, label }: ButtonStyleProps) {
-  return <StyledButton variant={variant}>{label}</StyledButton>;
+export function Button({ variant, label, outlined }: ButtonStyleProps) {
+  return (
+    <StyledButton variant={variant} outlined={outlined}>
+      {label}
+    </StyledButton>
+  );
 }
