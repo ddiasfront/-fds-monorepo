@@ -1,4 +1,6 @@
 import { createStitches, globalCss, PropertyValue } from "@stitches/react";
+import type * as StitchesTypes from "@stitches/react";
+import { blueDark, green, violet, slate } from "@radix-ui/colors";
 
 export const globalStyles = globalCss({
   "@import": [
@@ -23,16 +25,10 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      gray100: "hsl(206,10%,95%)",
-      gray500: "hsl(206,10%,76%)",
-      blue500: "hsl(206,100%,50%)",
-      blue600: "hsl(206,100%,65%)",
-      purple500: "hsl(252,78%,60%)",
-      green800: "hsl(148,60%,35%)",
-      green500: "hsl(148,60%,40%)",
-      green100: "hsl(148,60%,60%)",
-      red500: "hsl(352,100%,62%)",
-      white100: "#fff",
+      ...blueDark,
+      ...green,
+      ...slate,
+      ...violet,
     },
     space: {
       px: "1px",
@@ -84,6 +80,4 @@ export const {
   },
 });
 
-// import { ButtonCSS } from "./Button/ButtonStyles";
-
-// export { ButtonCSS };
+export { StitchesTypes };

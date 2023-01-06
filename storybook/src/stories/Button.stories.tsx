@@ -38,7 +38,7 @@ OutlinedGreen.args = {
 export const OutlinedGreenSize2 = Template.bind({});
 OutlinedGreenSize2.args = {
   variant: ButtonVariants.green,
-  size: 2,
+  size: { "@initial": "1", "@media(min-width:500px)": "2" },
   outlined: true,
   label: "Hello World 🌏",
 };

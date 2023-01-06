@@ -114,6 +114,7 @@ importers:
 
   web:
     specifiers:
+      '@radix-ui/colors': ^0.1.8
       '@stitches/react': ^1.2.8
       '@types/react': ^18.0.26
       '@types/react-dom': ^18.0.9
@@ -124,6 +125,7 @@ importers:
       vite: ^4.0.0
       vite-plugin-dts: ^1.7.1
     dependencies:
+      '@radix-ui/colors': 0.1.8
       '@stitches/react': 1.2.8_react@18.2.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -2070,6 +2072,10 @@ packages:
       source-map: 0.7.4
       webpack: 5.75.0
     dev: true
+
+  /@radix-ui/colors/0.1.8:
+    resolution: {integrity: sha512-jwRMXYwC0hUo0mv6wGpuw254Pd9p/R6Td5xsRpOmaWkUHlooNWqVcadgyzlRumMq3xfOTXwJReU0Jv+EIy4Jbw==}
+    dev: false
 
   /@rollup/pluginutils/4.2.1:
     resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
