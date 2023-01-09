@@ -4,9 +4,9 @@ Freedom Design System is developed using @stitches and @radix.
 
 Is a component library made initialy for React, and the goal is to accomplish the best practices of the market such as:
 
-Acessbility
-Testing
-Framework agnostic CSS
+###Acessbility
+###Testing
+###Framework agnostic CSS
 
 It is composed of 3 different libraries
 
