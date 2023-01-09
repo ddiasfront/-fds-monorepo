@@ -1,10 +1,10 @@
 import { css } from "@stitches/core";
 
 export const ButtonCSS = css({
+  border: "none",
   cursor: "pointer",
   px: "$3",
-  border: "1.25px solid $blue10",
-  borderRadius: "$rl",
+  borderRadius: "$rsm",
   fontSize: "$sm",
   fontWeight: "$medium",
   fontFamily: "Work Sans",
@@ -13,18 +13,20 @@ export const ButtonCSS = css({
   variants: {
     variant: {
       default: {
-        backgroundColor: "$blue11",
+        backgroundColor: "$blue8",
         color: "$blue12",
         "&:hover": {
-          backgroundColor: "$blue5",
+          backgroundColor: "$blue9",
         },
       },
-      green: {
-        backgroundColor: "$green3",
-        borderColor: "$green6",
-        color: "$green11",
+      mint: {
+        backgroundColor: "$mint4",
+        color: "$mint11",
         "&:hover": {
-          backgroundColor: "$green4",
+          backgroundColor: "$mint5",
+        },
+        "&:active": {
+          backgroundColor: "$mint4",
         },
       },
     },
@@ -51,15 +53,16 @@ export const ButtonCSS = css({
   },
   compoundVariants: [
     {
-      variant: "green",
+      variant: "mint",
       outlined: true,
       css: {
-        color: "$green11",
-        borderColor: "$green8",
+        border: "1px solid $mint8",
+        color: "$mint11",
+        borderColor: "$mint8",
 
         "&:hover": {
-          color: "$green1",
-          backgroundColor: "$green8",
+          color: "$outlineMint12",
+          backgroundColor: "$mint10",
         },
       },
     },

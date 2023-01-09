@@ -1,6 +1,19 @@
 import { createStitches, globalCss, PropertyValue } from "@stitches/react";
 import type * as StitchesTypes from "@stitches/react";
-import { blueDark, green, violet, slate } from "@radix-ui/colors";
+import {
+  mauve,
+  blueDarkA,
+  mintDarkA,
+  violet,
+  blackA,
+  mauveDarkA,
+  mintA,
+  blueA,
+  mauveA,
+  mint,
+  blue,
+  mintDark,
+} from "@radix-ui/colors";
 
 export const globalStyles = globalCss({
   "@import": [
@@ -25,10 +38,33 @@ export const {
 } = createStitches({
   theme: {
     colors: {
-      ...blueDark,
-      ...green,
-      ...slate,
-      ...violet,
+      ...mauve,
+      blue1: blueDarkA.blueA1,
+      blue2: blueDarkA.blueA2,
+      blue3: blueDarkA.blueA3,
+      blue4: blueDarkA.blueA4,
+      blue5: blueDarkA.blueA5,
+      blue6: blueDarkA.blueA6,
+      blue7: blueDarkA.blueA7,
+      blue8: blueDarkA.blueA8,
+      blue9: blueDarkA.blueA9,
+      blue10: blueDarkA.blueA10,
+      blue11: blueDarkA.blueA11,
+      blue12: blueDarkA.blueA12,
+
+      mint1: mintDarkA.mintA1,
+      mint2: mintDarkA.mintA2,
+      mint3: mintDarkA.mintA3,
+      mint4: mintDarkA.mintA4,
+      mint5: mintDarkA.mintA5,
+      mint6: mintDarkA.mintA6,
+      mint7: mintDarkA.mintA7,
+      mint8: mintDarkA.mintA8,
+      mint9: mintDarkA.mintA9,
+      mint10: mintDarkA.mintA10,
+      mint11: mintDarkA.mintA11,
+      mint12: mintDarkA.mintA12,
+      outlineMint12: mauve.mauve12,
     },
     space: {
       px: "1px",
@@ -65,7 +101,8 @@ export const {
     radii: {
       rxl: "50px",
       rl: "20px",
-      rsm: "10px",
+      rsm: "7px",
+      rsmx: "3px",
     },
     shadows: {},
     zIndices: {},
@@ -80,4 +117,34 @@ export const {
   },
 });
 
+export const LightTheme = createTheme({
+  colors: {
+    blue1: blueA.blueA1,
+    blue2: blueA.blueA2,
+    blue3: blueA.blueA3,
+    blue4: blueA.blueA4,
+    blue5: blueA.blueA5,
+    blue6: blueA.blueA6,
+    blue7: blueA.blueA7,
+    blue8: blueA.blueA8,
+    blue9: blueA.blueA9,
+    blue10: blueA.blueA10,
+    blue11: blueA.blueA11,
+    blue12: blueA.blueA12,
+
+    mint1: mint.mint1,
+    mint2: mint.mint2,
+    mint3: mint.mint3,
+    mint4: mint.mint4,
+    mint5: mint.mint5,
+    mint6: mint.mint6,
+    mint7: mint.mint7,
+    mint8: mint.mint8,
+    mint9: mint.mint9,
+    mint10: mint.mint10,
+    mint11: mint.mint11,
+    mint12: mint.mint12,
+    outlineMint12: mint.mint12,
+  },
+});
 export { StitchesTypes };

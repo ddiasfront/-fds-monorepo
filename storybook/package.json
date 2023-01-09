@@ -12,8 +12,10 @@
   },
   "dependencies": {
     "@freedom-ds/components": "workspace:^0.0.0",
+    "@freedom-ds/web": "workspace:^0.0.0",
     "@mdx-js/react": "^2.2.1",
     "@storybook/cli": "^6.5.15",
+    "multiple-themes-stitches": "^0.0.10",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

@@ -1,10 +1,10 @@
-import { ButtonCSS } from "@freedom-ds/styles";
+import { InputCSS } from "@freedom-ds/styles";
 import { styled, css, StitchesTypes } from "@freedom-ds/web";
 import React, { forwardRef } from "react";
 
 export enum ButtonVariants {
   default = "default",
-  mint = "mint",
+  green = "green",
 }
 
 export type ButtonStyleProps = {
@@ -14,14 +14,13 @@ export type ButtonStyleProps = {
   size: StitchesTypes.CSS;
 };
 
-const StyledButton = styled("button", ButtonCSS);
+const StyledInput = styled("input", InputCSS);
 
-export const Button = forwardRef<
-  React.ElementRef<typeof StyledButton>,
-  ButtonStyleProps
->(({ ...props }) => {
-  return <StyledButton {...props}>{props.label}</StyledButton>;
-});
+export const Input = forwardRef<React.ElementRef<typeof StyledInput>>(
+  ({ ...props }) => {
+    return <StyledInput {...props} />;
+  }
+);
 
 // export function Button({ variant, label, outlined, size }: ButtonStyleProps) {
 //   return (

@@ -22,22 +22,22 @@ Default.args = {
   label: "Hello World 🌏",
 };
 
-export const Green = Template.bind({});
-Green.args = {
-  variant: ButtonVariants.green,
+export const Mint = Template.bind({});
+Mint.args = {
+  variant: ButtonVariants.mint,
   label: "Hello World 🌏",
 };
 
-export const OutlinedGreen = Template.bind({});
-OutlinedGreen.args = {
-  variant: ButtonVariants.green,
+export const OutlinedMint = Template.bind({});
+OutlinedMint.args = {
+  variant: ButtonVariants.mint,
   outlined: true,
   label: "Hello World 🌏",
 };
 
-export const OutlinedGreenSize2 = Template.bind({});
-OutlinedGreenSize2.args = {
-  variant: ButtonVariants.green,
+export const OutlinedMintSize2 = Template.bind({});
+OutlinedMintSize2.args = {
+  variant: ButtonVariants.mint,
   size: { "@initial": "1", "@media(min-width:500px)": "2" },
   outlined: true,
   label: "Hello World 🌏",
