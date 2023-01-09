@@ -64,7 +64,8 @@ export const {
       mint10: mintDarkA.mintA10,
       mint11: mintDarkA.mintA11,
       mint12: mintDarkA.mintA12,
-      outlineMint12: mauve.mauve12,
+      defaultText: mauve.mauve1,
+      defaulOutlinedtText: mauve.mauve12,
     },
     space: {
       px: "1px",
@@ -144,7 +145,7 @@ export const LightTheme = createTheme({
     mint10: mint.mint10,
     mint11: mint.mint11,
     mint12: mint.mint12,
-    outlineMint12: mint.mint12,
+    defaultText: mauve.mauve12,
   },
 });
 export { StitchesTypes };

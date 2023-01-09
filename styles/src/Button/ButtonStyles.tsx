@@ -61,7 +61,7 @@ export const ButtonCSS = css({
         borderColor: "$mint8",
 
         "&:hover": {
-          color: "$outlineMint12",
+          color: "$defaulOutlinedtText",
           backgroundColor: "$mint10",
         },
       },

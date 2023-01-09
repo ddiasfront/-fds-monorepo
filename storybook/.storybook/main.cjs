@@ -5,6 +5,7 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "multiple-themes-stitches",
+    "@storybook/addon-a11y",
   ],
   framework: "@storybook/react",
   core: {
