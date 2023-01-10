@@ -22,17 +22,3 @@ export const Button = forwardRef<
 >(({ ...props }) => {
   return <StyledButton {...props}>{props.label}</StyledButton>;
 });
-
-// export function Button({ variant, label, outlined, size }: ButtonStyleProps) {
-//   return (
-//     <button
-//       className={ButtonCSS({
-//         variant: variant,
-//         outlined: outlined,
-//         size: size,
-//       })}
-//     >
-//       {label}
-//     </button>
-//   );
-// }

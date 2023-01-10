@@ -5,9 +5,9 @@ export const ButtonCSS = css({
   cursor: "pointer",
   px: "$3",
   borderRadius: "$rsm",
-  fontSize: "$sm",
+  fontSize: "$xs",
   fontWeight: "$medium",
-  fontFamily: "Work Sans",
+  // fontFamily: "$work",
   transition: "all 0.5s ease",
 
   variants: {
@@ -38,11 +38,11 @@ export const ButtonCSS = css({
 
     size: {
       1: {
-        height: 25,
         fontSize: "$md",
       },
       2: {
-        height: 55,
+        px: "$3",
+        py: "$3",
         fontSize: "$lg",
       },
     },

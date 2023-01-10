@@ -1,7 +1,7 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { Input, ButtonVariants } from "@freedom-ds/components";
+import { Input, InputVariants } from "@freedom-ds/components";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -18,4 +18,15 @@ const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
 export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Default.args = {};
+Default.args = {
+  label: "Label",
+  defaultValue: "Default",
+};
+
+export const Mint = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Mint.args = {
+  label: "Label",
+  defaultValue: "Mint",
+  variant: InputVariants.mint,
+};

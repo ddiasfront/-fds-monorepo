@@ -1,4 +1,5 @@
-import { ButtonCSS } from "./Button/ButtonStyles";
-import { InputCSS } from "./Button/InputStyles";
+import { ButtonCSS } from "./Styles/ButtonStyles";
+import { InputCSS } from "./Styles/InputStyles";
+import { LabelCSS } from "./Styles/LabelStyles";
 
-export { ButtonCSS, InputCSS };
+export { ButtonCSS, InputCSS, LabelCSS };
