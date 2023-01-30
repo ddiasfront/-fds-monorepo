@@ -27,6 +27,7 @@ export type InputProps = {
   variant?: InputVariants;
   label?: string;
   defaultValue?: string;
+  error?: boolean;
 };
 
 export const Input = forwardRef<

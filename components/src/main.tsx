@@ -1,4 +1,6 @@
-import { globalStyles } from "@freedom-ds/web";
+import { globalStyles, theme } from "@freedom-ds/web";
+
+console.log(theme);
 
 globalStyles();
 

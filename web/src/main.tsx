@@ -7,6 +7,8 @@ import {
   blueA,
   mint,
   blackA,
+  redDark,
+  redA,
 } from "@radix-ui/colors";
 
 export const globalStyles = globalCss({
@@ -34,6 +36,8 @@ export const {
     colors: {
       ...mauve,
       ...blackA,
+      ...redDark,
+      red6: redDark.red6,
       blue1: blueDarkA.blueA1,
       blue2: blueDarkA.blueA2,
       blue3: blueDarkA.blueA3,
@@ -101,6 +105,7 @@ export const {
       rsmx: "3px",
     },
     shadows: {
+      ...redDark,
       blue1: blueDarkA.blueA1,
       blue2: blueDarkA.blueA2,
       blue3: blueDarkA.blueA3,
@@ -173,6 +178,8 @@ export const LightTheme = createTheme({
     defaultText: mauve.mauve12,
   },
   shadows: {
+    red6: redA.redA6,
+    red7: redA.redA7,
     blue1: blueA.blueA1,
     blue2: blueA.blueA2,
     blue3: blueA.blueA3,

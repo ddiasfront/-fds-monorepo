@@ -24,5 +24,13 @@ export const InputCSS = css({
       },
       default: {},
     },
+    error: {
+      true: {
+        boxShadow: "0 0 0 1px $red6",
+        "&:focus": {
+          boxShadow: "0 0 0 2px $red7",
+        },
+      },
+    },
   },
 });

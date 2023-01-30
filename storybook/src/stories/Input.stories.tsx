@@ -8,9 +8,6 @@ export default {
   title: "Example/Input",
   component: Input,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 } as ComponentMeta<typeof Input>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
@@ -29,4 +26,19 @@ Mint.args = {
   label: "Label",
   defaultValue: "Mint",
   variant: InputVariants.mint,
+};
+
+export const MintWoLabel = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+MintWoLabel.args = {
+  defaultValue: "Username",
+  variant: InputVariants.mint,
+};
+
+export const MintWoLabelWError = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+MintWoLabelWError.args = {
+  defaultValue: "Username",
+  variant: InputVariants.mint,
+  error: true,
 };
